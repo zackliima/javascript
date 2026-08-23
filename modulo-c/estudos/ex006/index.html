@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        div#area {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interact... <!-- onclick="click" onmouseenter="enter" onmouseout="leave" Pode ser feita assim dentro da tag div -->
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', click)
+        a.addEventListener('mouseenter', enter)
+        a.addEventListener('mouseout', leave)
+
+        function click() {
+            a.innerText = 'Clicked!'
+            a.style.background = 'red'
+        }
+
+        function enter() {
+            a.innerText = 'Entered!'
+        }
+
+        function leave() {
+            a.innerText = 'Left!'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
