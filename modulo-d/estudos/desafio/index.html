@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Países</title>
+</head>
+<body>
+    <h1>Sistema de Países</h1>
+    <div>
+        <p>
+            De qual país você é?
+            <input type="text" name="txtnac" id="txtnac">
+            <input type="button" value="Verificar" onclick="ver_nac()">
+        </p>
+        <p id="res"></p>
+    </div>
+
+    <script>
+        function ver_nac() {
+            var nac = document.querySelector('input#txtnac').value
+            var res = document.querySelector('p#res')
+            
+            if (nac != 'Brasil') {
+                res.innerHTML = `<p>Você é estrangeiro!</p>`
+            } else {
+                res.innerHTML = `<p>Você é brasileiro</p>`
+            }
+        }        
+    </script>
+</body>
+</html>
