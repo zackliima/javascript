@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Intermediate - 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Discount System</h1>
+        <p>Enter the customer and purchase details so we can check if a discount applies.</p>
+    </header>
+
+
+    <section>
+        <div id="form">
+            <p>The value of your purchase:
+                <input type="number" name="purchase_value" id="purchase_value">
+            </p>
+            <p>Are you a VIP costumer?
+                <span>
+                    <input type="radio" name="vip" id="yesv" checked>
+                    <label for="yesv">Yes</label>
+                    <input type="radio" name="vip" id="nov">
+                    <label for="nov">No</label>
+                </span>
+            </p>
+            <p>
+                <input type="button" value="Validate" onclick="check()">
+            </p>
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; ZCK&trade; Technologies.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
