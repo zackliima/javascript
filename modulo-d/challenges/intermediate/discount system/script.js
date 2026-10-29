@@ -4,13 +4,25 @@ function check() {
     var res = document.querySelector('div#res')
     var discount_percentage
 
-    if (purchase_value > 0 && purchase_value < 100) {
+    if (purchase_value <= 0) {
+        res.innerHTML = `<strong>Invalid value</strong>`
+    } else if (purchase_value < 100) {
         discount_percentage = 0
     } else if (purchase_value < 500) {
         discount_percentage = 0.05
     } else if (purchase_value < 1000) {
         discount_percentage = 0.10
-    } else if (purchase_value => 1000) {
+    } else {
+        discount_percentage = 0.15
+    }
+
+    /* if (purchase_value > 0 && purchase_value < 100) {
+        discount_percentage = 0
+    } else if (purchase_value < 500) {
+        discount_percentage = 0.05
+    } else if (purchase_value < 1000) {
+        discount_percentage = 0.10
+    } else if (purchase_value > 1000) {
         discount_percentage = 0.15
     } else {
         res.innerHTML = `<strong>Invalid value</strong>`
@@ -29,5 +41,5 @@ function check() {
     res.innerHTML = `<Strong>Original Value:</strong> ${purchase_value}<br>
     <Strong>Discount Percentage:</strong> ${total_discount_percentage}<br>
     <Strong>Discount Value:</strong> ${total_discount}<br>
-    <Strong>Final Value:</strong> ${final_value}`
+    <Strong>Final Value:</strong> ${final_value}` */
 }

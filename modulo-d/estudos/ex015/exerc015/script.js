@@ -37,7 +37,7 @@ function check() {
                 img.setAttribute('src', 'images/elderly-women.webp')
             }
         }
-
+        
         res.style.textAlign = 'center'
         res.innerHTML = `We detected a ${age} year-old ${gender}`
         res.appendChild(img)
