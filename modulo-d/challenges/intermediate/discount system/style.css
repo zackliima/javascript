@@ -73,6 +73,9 @@ input[type="button"]:hover {
 
 div#res {
     text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
 }
 
 footer {
