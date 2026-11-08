@@ -75,7 +75,7 @@ div#res {
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
-    align-items: flex-start;
+    align-items: normal;
 }
 
 footer {

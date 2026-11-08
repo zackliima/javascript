@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Intermediate - 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Triangle Classifier</h1>
+        <p>Enter the values ​​for the 3 given sides to determine whether they form an equilateral, isosceles, or scalene triangle, or none at all.</p>
+    </header>
+
+
+    <section>
+        <div id="form">
+            <p> 
+                <label for="sideA">Value of side A: </label>
+                <input type="number" name="sideA" id="sideA" min="0" step="0.1" required>
+            </p>
+            <p> 
+                <label for="sideB">Value of side B: </label>
+                <input type="number" name="sideB" id="sideB" min="0" step="0.1" required>
+            </p>
+            <p> 
+                <label for="sideC">Value of side C: </label>
+                <input type="number" name="sideC" id="sideC" min="0" step="0.1" required>
+            </p>
+            <p>
+                <input type="button" value="Validate" onclick="check()">
+            </p>
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; ZCK&trade; Technologies.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
